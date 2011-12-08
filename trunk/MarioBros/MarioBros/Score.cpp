@@ -1,12 +1,12 @@
 #include "Score.h"
-#include "Object.h"
+#include "GObject.h"
 #include "Info.h"
-#include "Animation.h"
-#include "Sprite.h"
+#include "GAnimation.h"
+#include "GSprite.h"
 #include "Utilities.h"
 
-Score::Score():Object(){}
-Score::Score(Sprite* _sprite,float _x,float _y,int _score):Object(_x,_y,40,10)
+Score::Score():GObject(){}
+Score::Score(GSprite* _sprite,float _x,float _y,int _score):GObject(_x,_y,40,10)
 {
 	sprite			=_sprite;
 	distanceMove	=0;
@@ -21,7 +21,7 @@ void Score::Update(float TPF)
 	if(distanceMove<-100)
 		isNeedDelete=true;
 }
-void Score::Render(Camera* camera)
+void Score::Render(GCamera* camera)
 {
 	DrawNumber(sprite,score,x-camera->x,y);
 }

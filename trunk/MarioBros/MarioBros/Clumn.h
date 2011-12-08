@@ -1,18 +1,18 @@
 #pragma once
 
-#include "Animation.h"
-#include "Sprite.h"
-#include "Object.h"
+#include "GAnimation.h"
+#include "GSprite.h"
+#include "GObject.h"
 #include <list>
 using namespace std;
 
-class Clumn:public Object
+class Clumn:public GObject
 {
 public:
 	Clumn();
-	Clumn(float _x, float _y,float width,float height,int _ID,Sprite* _sprite);
-	void Render(Camera* camera);
-	void ResetWhenReload(Sprite* _sprite);
+	Clumn(float _x, float _y,float width,float height,int _ID,GSprite* _sprite);
+	void Render(GCamera* camera);
+	void ResetWhenReload(GSprite* _sprite);
 	void Save(fstream *fs);
 	void Load(fstream *fs);
 };

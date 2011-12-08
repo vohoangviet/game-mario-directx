@@ -172,30 +172,6 @@
 			UniqueIdentifier="{93995380-89BD-4b04-88EB-625FBE52EBFB}"
 			>
 			<File
-				RelativePath=".\Animation.cpp"
-				>
-			</File>
-			<File
-				RelativePath=".\Animation.h"
-				>
-			</File>
-			<File
-				RelativePath=".\Audio.cpp"
-				>
-			</File>
-			<File
-				RelativePath=".\Audio.h"
-				>
-			</File>
-			<File
-				RelativePath=".\Collision.cpp"
-				>
-			</File>
-			<File
-				RelativePath=".\Collision.h"
-				>
-			</File>
-			<File
 				RelativePath=".\dsutil.cpp"
 				>
 			</File>
@@ -208,35 +184,83 @@
 				>
 			</File>
 			<File
-				RelativePath=".\Graphic.cpp"
+				RelativePath=".\GAnimation.cpp"
 				>
 			</File>
 			<File
-				RelativePath=".\Graphic.h"
+				RelativePath=".\GAnimation.h"
 				>
 			</File>
 			<File
-				RelativePath=".\Input.cpp"
+				RelativePath=".\GAudio.cpp"
 				>
 			</File>
 			<File
-				RelativePath=".\Input.h"
+				RelativePath=".\GAudio.h"
 				>
 			</File>
 			<File
-				RelativePath=".\Sprite.cpp"
+				RelativePath=".\GCamera.cpp"
 				>
 			</File>
 			<File
-				RelativePath=".\Sprite.h"
+				RelativePath=".\GCamera.h"
 				>
 			</File>
 			<File
-				RelativePath=".\TimeManager.cpp"
+				RelativePath=".\GCollision.cpp"
 				>
 			</File>
 			<File
-				RelativePath=".\TimeManager.h"
+				RelativePath=".\GCollision.h"
+				>
+			</File>
+			<File
+				RelativePath=".\GGraphic.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\GGraphic.h"
+				>
+			</File>
+			<File
+				RelativePath=".\GInput.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\GInput.h"
+				>
+			</File>
+			<File
+				RelativePath=".\GObject.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\GObject.h"
+				>
+			</File>
+			<File
+				RelativePath=".\GQuadTree.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\GQuadTree.h"
+				>
+			</File>
+			<File
+				RelativePath=".\GSprite.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\GSprite.h"
+				>
+			</File>
+			<File
+				RelativePath=".\GTimeManager.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\GTimeManager.h"
 				>
 			</File>
 			<File
@@ -411,14 +435,6 @@
 					>
 				</File>
 				<File
-					RelativePath=".\Camera.cpp"
-					>
-				</File>
-				<File
-					RelativePath=".\Camera.h"
-					>
-				</File>
-				<File
 					RelativePath=".\CheckPoint.cpp"
 					>
 				</File>
@@ -432,22 +448,6 @@
 				</File>
 				<File
 					RelativePath=".\Mario.h"
-					>
-				</File>
-				<File
-					RelativePath=".\Object.cpp"
-					>
-				</File>
-				<File
-					RelativePath=".\Object.h"
-					>
-				</File>
-				<File
-					RelativePath=".\QuadTree.cpp"
-					>
-				</File>
-				<File
-					RelativePath=".\QuadTree.h"
 					>
 				</File>
 				<File
@@ -476,6 +476,10 @@
 				</File>
 			</Filter>
 		</Filter>
+		<File
+			RelativePath=".\ClassDiagram1.cd"
+			>
+		</File>
 		<File
 			RelativePath=".\Game.cpp"
 			>

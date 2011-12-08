@@ -1,12 +1,12 @@
 #pragma once
 
-#include "Animation.h"
-#include "Sprite.h"
-#include "Object.h"
+#include "GAnimation.h"
+#include "GSprite.h"
+#include "GObject.h"
 #include <list>
 using namespace std;
 
-class QBrick:public Object
+class QBrick:public GObject
 {
 private:
 	char	state;
@@ -18,14 +18,14 @@ public:
 	bool	isBright;
 
 	QBrick();
-	QBrick(float _x, float _y,float width,float height,bool _isBright,int _ID,Sprite* _sprite);
-	void Update(list<Object*>* staObjs,list<Object*>* dynObjs,Input* input, float TPF);
+	QBrick(float _x, float _y,float width,float height,bool _isBright,int _ID,GSprite* _sprite);
+	void Update(list<GObject*>* staObjs,list<GObject*>* dynObjs,GInput* input, float TPF);
 	void SetVar(char* varName,int val);
 	int GetVar(char* varName);
-	void Render(Camera *camera);
+	void Render(GCamera *camera);
 	void ChangeState(char _state);
 	void UpdateAnimation(float TPF);
-	void ResetWhenReload(Sprite* _sprite);
+	void ResetWhenReload(GSprite* _sprite);
 	void Save(fstream *fs);
 	void Load(fstream *fs);
 };
