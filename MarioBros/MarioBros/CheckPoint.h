@@ -1,8 +1,8 @@
 #pragma once
 
-class Object;
+class GObject;
 
-class CheckPoint:public Object
+class CheckPoint:public GObject
 {
 public:
 	char	stage;

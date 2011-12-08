@@ -1,12 +1,12 @@
 #pragma once
 
-#include "Animation.h"
-#include "Sprite.h"
-#include "Object.h"
+#include "GAnimation.h"
+#include "GSprite.h"
+#include "GObject.h"
 #include <list>
 using namespace std;
 
-class Sign:public Object
+class Sign:public GObject
 {
 public:
 	Sign();
